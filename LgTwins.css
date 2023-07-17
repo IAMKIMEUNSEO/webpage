@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #fff;
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+.menu{
+    flex-basis: 30%;
+}
+.menuBar{
+    padding: 0px 10px;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;
+}
+.menu ul li a{
+    display: flex;    
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.menu ul li ul.lgMenu li{
+    display: block;
+}
+.menu ul li ul.lgMenu{
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+.menu ul li ul.lgMenu li{
+    margin-left: 0px;   /* 부모 ul li{margin-left: 40px} 연쇄 적용 방지 */
+    padding: 0px;
+}
+.menu ul li a:hover{
+    background: rgba(0,0,0,0.45);
+}
+.menu ul li:hover ul.lgMenu{
+    display: block;
+}
+.headerImg{
+    display: flex;
+    flex-basis: 40%;
+    justify-content: center;   /* display: flex -가운데 정렬-> justify-content: center */
+}
+.logo{
+    width: 90px;
+}
+.sideMenu{
+    flex-basis: 30%;
+    display: flex;
+}
+.sideMenu ul{
+    list-style: none;
+    margin-right: 50px;
+}
+.sideMenu ul li{
+    padding-right: 20px;
+    display: inline-block;
+    float: right;
+    margin: 28.7px 0px;
+}
+.sideMenu ul li a{
+    text-decoration: none;
+    color: #ff4f4f;
+    font-weight: 600;
+    height: 79px;
+}
+main{
+    width: 100%;
+    height: 90vh;
+    background-image: url(lgtwins.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+footer{
+    background: #EDEDED;
+}
+footer ul{
+    list-style: none;
+    text-align: center;   
+    /* footer ul li{display: inline-block} 가운데 정렬 -> 부모{text-align: center} */
+}
+footer ul li{
+    display: inline-block;
+    padding: 100px 0px 30px;
+}
+footer ul li a{
+    display: flex;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.provision span{
+    border: 1px solid #ccc;
+}
+.icon{
+    display: flex;
+    justify-content: center;   /* display: flex -가운데 정렬-> justify-content: center; */
+    padding-bottom: 30px;
+}
+.icon span{
+    padding: 0px 15px;
+}
+.fa-facebook{
+    color: rgb(18, 80, 195);
+}
+.fa-twitter{
+    color: #349beb;
+}
+.fa-instagram{
+    padding: 1px 3px;
+    border-radius: 30%;
+    background: linear-gradient(220deg, purple, red, orange, yellow);
+    color: white;
+}
+.text{
+    text-align: center;
+}
+.text p{
+    padding-bottom: 20px;
+}
